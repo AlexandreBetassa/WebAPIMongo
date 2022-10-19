@@ -16,7 +16,7 @@ namespace APIAgendaMongo.Repositories
             _adress = database.GetCollection<Adress>(settings.AdressCollectionName);
         }
 
-        public Adress Create(Adress adress)
+        public Adress Create(Adress adress) 
         {
             _adress.InsertOne(adress);
             return adress;
